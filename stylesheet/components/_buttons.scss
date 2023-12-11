@@ -10,9 +10,11 @@
   color: v.$background-color;
   font-weight: v.$font-weight-bold;
   margin-top: 2.4rem;
+  &:hover {
+    background-color: v.$background-color;
+    color: v.$primary-color;
+  }
 }
 
-.btn:hover {
-  background-color: v.$background-color;
-  color: v.$primary-color;
-}
+
+

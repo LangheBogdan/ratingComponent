@@ -74,10 +74,11 @@ input[type=radio] {
   place-content: center;
 }
 
-input[type=radio]:hover {
-  background-color: hsl(25, 97%, 53%);
+@media screen and (min-width: 124rem) {
+  input[type=radio]:hover {
+    background-color: hsl(25, 97%, 53%);
+  }
 }
-
 input[type=radio]:focus {
   outline: 0.1rem solid hsl(216, 12%, 54%);
   outline-offset: 0.1rem;
@@ -100,6 +101,10 @@ input[type=radio]:focus {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
   margin-top: 2.4rem;
+}
+.btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
 }
 
 main {
