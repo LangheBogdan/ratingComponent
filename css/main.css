@@ -112,7 +112,6 @@ main {
   padding: 2.4rem 0.4rem 3.4rem;
   background: radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%);
   border-radius: 1.5rem;
-  width: calc(100% - 0.5rem);
 }
 
 @media screen and (min-width: 480px) {
