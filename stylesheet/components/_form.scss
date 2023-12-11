@@ -3,6 +3,7 @@
 .form {
   &__field {
     border: none;
+    padding: 0;
   }
   &__title {
     font-size: v.$font-size-heading-s;
