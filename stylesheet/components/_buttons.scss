@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as v;
+
+.btn {
+  width: 100%;
+  font-family: v.$font-family;
+  border: none;
+  padding: 1.2rem 0;
+  border-radius: 2.25rem;
+  background-color: v.$primary-color;
+  color: v.$background-color;
+  font-weight: v.$font-weight-bold;
+  margin-top: 2.4rem;
+}

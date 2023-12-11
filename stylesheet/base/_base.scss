@@ -1,0 +1,15 @@
+@use "../abstracts/variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0 2.4rem;
+  background-color: v.$secondary-color-very-dark;
+  font-family: v.$font-family;
+  font-size: v.$font-size-paragraph;
+  color: v.$secondary-color-light;
+  display: flex;
+  min-height: 100svh;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
+}
+
+body {
+  margin: 0;
+  padding: 0 2.4rem;
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  font-size: 1.4rem;
+  color: hsl(216, 12%, 63%);
+  display: flex;
+  min-height: 100svh;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__field {
+  border: none;
+}
+.form__title {
+  font-size: 2.4rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+.form__text {
+  margin-bottom: 2.4rem;
+}
+.form__control {
+  padding-top: 0.4rem;
+  font-size: 2.4rem;
+  font-family: "Overpass", sans-serif;
+}
+
+input[type=radio]::before {
+  content: "";
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1rem 1rem hsl(216, 12%, 54%);
+}
+
+input[type=radio]:checked::before {
+  transform: scale(1);
+}
+
+input[type=radio] {
+  appearance: none;
+  width: 3rem;
+  height: 3rem;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+input[type=radio]:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+
+input[type=radio]:focus {
+  outline: 0.1rem solid hsl(216, 12%, 54%);
+  outline-offset: 0.1rem;
+}
+
+.icon_rating {
+  padding: 1.6rem;
+  background: hsl(213, 19%, 18%);
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  width: 100%;
+  font-family: "Overpass", sans-serif;
+  border: none;
+  padding: 1.2rem 0;
+  border-radius: 2.25rem;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  margin-top: 2.4rem;
+}
+
+main {
+  padding: 2.4rem 2.4rem 3.2rem;
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%);
+  border-radius: 1.5rem;
+  width: 320px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=main.css.map */

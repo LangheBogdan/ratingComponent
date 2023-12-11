@@ -1,0 +1,52 @@
+@use "../abstracts/variables" as v;
+
+.form {
+  &__field {
+    border: none;
+  }
+  &__title {
+    font-size: v.$font-size-heading-s;
+    color: v.$background-color;
+    font-weight: v.$font-weight-bold;
+  }
+  &__text {
+    margin-bottom: 2.4rem;
+  }
+  &__control {
+    padding-top: 0.4rem;
+    font-size: 2.4rem;
+    font-family: v.$font-family;
+  }
+}
+
+
+input[type="radio"]::before {
+  content: "";
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1rem 1rem v.$secondary-color-medium;
+}
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 3rem;
+  height: 3rem;
+  background-color: v.$secondary-color-dark;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+input[type="radio"]:hover {
+  background-color: v.$primary-color;
+}
+
+input[type="radio"]:focus {
+  outline: max(0.1rem, 0.07rem) solid v.$secondary-color-medium;
+  outline-offset: max(0.1rem, 0.07rem);
+}
