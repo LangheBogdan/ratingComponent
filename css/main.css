@@ -60,6 +60,11 @@ input[type=radio]::before {
   box-shadow: inset 1rem 1rem hsl(216, 12%, 54%);
 }
 
+@media screen and (min-width: 1240px) {
+  input[type=radio]:hover {
+    background-color: hsl(25, 97%, 53%);
+  }
+}
 input[type=radio]:checked::before {
   transform: scale(1);
 }

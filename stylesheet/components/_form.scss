@@ -29,6 +29,11 @@ input[type="radio"]::before {
   transition: 120ms transform ease-in-out;
   box-shadow: inset 1rem 1rem v.$secondary-color-medium;
 }
+@media screen and (min-width: 1240px) {
+  input[type="radio"]:hover {
+    background-color: v.$primary-color;
+  }
+}
 input[type="radio"]:checked::before {
   transform: scale(1);
 }
