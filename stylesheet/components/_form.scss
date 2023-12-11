@@ -42,8 +42,10 @@ input[type="radio"] {
   display: grid;
   place-content: center;
 }
-input[type="radio"]:hover {
-  background-color: v.$primary-color;
+@media screen and(min-width: 124rem) {
+  input[type="radio"]:hover {
+    background-color: v.$primary-color;
+  }
 }
 
 input[type="radio"]:focus {
