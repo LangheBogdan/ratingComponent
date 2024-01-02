@@ -1,3 +1,6 @@
+@use "../abstracts/variables" as v;
+
+
 main {
   padding: 2.4rem 0.4rem 3.4rem;
   background: radial-gradient(
@@ -9,8 +12,8 @@ main {
 
 
 }
- @media screen and (min-width: 480px) {
+ @media screen and (min-width: v.$min-width) {
   main {
-    width: 320px;
+    width: v.$small-devices-width;
   }
  }

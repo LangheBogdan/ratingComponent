@@ -116,7 +116,7 @@ main {
 
 @media screen and (min-width: 480px) {
   main {
-    width: 320px;
+    width: 32rem;
   }
 }
 .wrapper {
