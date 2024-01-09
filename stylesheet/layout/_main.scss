@@ -2,6 +2,7 @@
 
 
 main {
+
   padding: 2.4rem 0.4rem 3.4rem;
   background: radial-gradient(
     98.96% 98.96% at 50% 0%,
@@ -9,7 +10,9 @@ main {
     #181e27 100%
   );
   border-radius: 1.5rem;
-
+.selection-made {
+  text-align: center;
+}
 
 }
  @media screen and (min-width: v.$min-width) {

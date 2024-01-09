@@ -1,7 +1,16 @@
 const submitBtn = document.querySelector("#submit-btn");
+const iconRating = document.querySelector(".icon_rating");
+const afterRating = document.querySelector(".after_rating");
+const selectionMade = document.querySelector(".selection-made");
+const form = document.querySelector(".form");
 
 submitBtn.addEventListener("click", () => {
   console.log(getRatingMessage());
+  iconRating.classList.add('d-none'); // Added code to add class 'd-none' to the iconRating element
+  afterRating.classList.remove('d-none');
+  form.classList.add("d-none");
+  selectionMade.textContent = getRatingMessage();
+
 });
 
 function getCheckedRatingElementValue(elements) {
