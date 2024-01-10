@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as v;
+
+.selection-made {
+  background-color: v.$secondary-color-dark;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0.5rem 1.2rem;
+  color: v.$primary-color;
+  border-radius: 2.3rem;
+}

@@ -101,6 +101,15 @@ input[type=radio]:focus {
   margin: 0 auto 3.2rem;
 }
 
+.selection-made {
+  background-color: hsl(213, 19%, 18%);
+  width: 75%;
+  margin: 0 auto;
+  padding: 0.5rem 1.2rem;
+  color: hsl(25, 97%, 53%);
+  border-radius: 2.3rem;
+}
+
 .d-none {
   display: none;
 }

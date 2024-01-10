@@ -1,6 +1,5 @@
 @use "../abstracts/variables" as v;
 
-
 main {
   width: 41.2rem;
   padding: 2.4rem 0.4rem 3.4rem;
@@ -10,13 +9,12 @@ main {
     #181e27 100%
   );
   border-radius: 1.5rem;
-.selection-made {
-  text-align: center;
+  .selection-made {
+    text-align: center;
+  }
 }
-
-}
- @media screen and (min-width: v.$min-width) {
+@media screen and (min-width: v.$min-width) {
   main {
     width: v.$small-devices-width;
   }
- }
+}
